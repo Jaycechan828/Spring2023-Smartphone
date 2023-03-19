@@ -23,6 +23,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { performSegue(withIdentifier: "segueSecondVC", sender:self )
+
+            // Add code to go to the view controller
+
+        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "segueSecondVC" {
+//            let secondVC = segue.destination as! SecondViewController
+//            guard let name = txtName.text
+//            seconVC.name =
+        }
+    
+
+
     
 
     override func viewDidLoad() {
